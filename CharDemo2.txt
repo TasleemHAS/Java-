@@ -1,0 +1,19 @@
+class CharDemo2 
+{
+    public static void main(String[] args)
+    {
+        String str;
+        char ch1;
+        int num;
+
+        System.out.print("Enter a character: ");
+        str = System.console().readLine();
+        ch1 = str.charAt(0);
+        System.out.println("ch1 contains " + ch1);
+
+        System.out.print("Enter a number: ");
+        num = Integer.parseInt(System.console().readLine());
+        ch1 += num; 
+        System.out.println("ch1 is now " + num);
+    }
+}

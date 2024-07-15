@@ -1,0 +1,28 @@
+class Ternary 
+{
+ public static void main(String[] args) 
+ {
+    int i;
+
+    String input = System.console().readLine();
+    try
+    {
+        i = Integer.parseInt(input);
+    } 
+    catch (NumberFormatException e)
+    {
+        System.out.println("Invalid input. Please enter an integer.");
+        return;
+    }
+
+    int k = i < 0 ? -i : Math.abs(i); 
+    System.out.print("Absolute value of ");
+    System.out.println(i + " is " + k);
+
+   
+    i = -10;
+    k = i < 0 ? -i : Math.abs(i);
+    System.out.print("Absolute value of ");
+    System.out.println(i + " is " + k);
+ }
+}

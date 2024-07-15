@@ -1,0 +1,34 @@
+class Promote 
+{
+    public static void main(String[] args) 
+    {
+        int b;
+        char c;
+        short s;
+        int i;
+        float f;
+        double d;
+
+        System.out.print("Enter a byte value: ");
+        b = Integer.parseInt(System.console().readLine());
+
+        System.out.print("Enter a character: ");
+        c = System.console().readLine().charAt(0);
+
+        System.out.print("Enter a short value: ");
+        s = Short.parseShort(System.console().readLine());
+
+        System.out.print("Enter an integer value: ");
+        i = Integer.parseInt(System.console().readLine());
+
+        System.out.print("Enter a float value: ");
+        f = Float.parseFloat(System.console().readLine());
+
+        System.out.print("Enter a double value: ");
+        d = Double.parseDouble(System.console().readLine());
+
+        double result = (f * b) + (i / c) - (d * s);
+        System.out.println((f * b) + " + " + (i / c) + " - " + (d * s));
+        System.out.println("result = " + result);
+    }
+}

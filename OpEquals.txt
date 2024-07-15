@@ -1,0 +1,24 @@
+public class OpEquals
+{
+    public static void main(String args[])
+    {
+        System.out.println("Enter an integer for 'a': ");
+        int a = Integer.parseInt(System.console().readLine());
+
+        System.out.println("Enter an integer for 'b': ");
+        int b = Integer.parseInt(System.console().readLine());
+
+        System.out.println("Enter an integer for 'c': ");
+        int c = Integer.parseInt(System.console().readLine());
+
+        a += 5;
+        b *= 4;
+        c += a * b;
+        c %= 6;
+
+        System.out.println("After performing operations:");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        System.out.println("c = " + c);
+    }
+}
